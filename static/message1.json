@@ -1,0 +1,78 @@
+{"fileList1":[{
+        "fileName": "文件.txt",
+        "fileType": "document",
+        "fileSize": "27KB",
+        "lastModified": "2018/1/12",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件.mp3",
+        "fileType": "document",
+        "fileSize": "27KB",
+        "lastModified": "2018/2/12",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件.mp4",
+        "fileType": "document",
+        "fileSize": "27KB",
+        "lastModified": "2018/5/22",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件.xlsx",
+        "fileType": "document",
+        "fileSize": "27KB",
+        "lastModified": "2018/5/12",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件.doc",
+        "fileType": "document",
+        "fileSize": "27KB",
+        "lastModified": "2018/4/12",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件.pdf",
+        "fileType": "document",
+        "fileSize": "27KB",
+        "lastModified": "2016/5/11",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件1",
+        "fileType": "folder",
+        "fileSize": "27KB",
+        "lastModified": "2018/5/12",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件2",
+        "fileType": "folder",
+        "fileSize": "27KB",
+        "lastModified": "2017/5/19",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件3",
+        "fileType": "folder",
+        "fileSize": "27KB",
+        "lastModified": "2018/7/7",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件4",
+        "fileType": "folder",
+        "fileSize": "27KB",
+        "lastModified": "2018/5/23",
+        "isSelected": false
+      },
+      {
+        "fileName": "文件5",
+        "fileType": "folder",
+        "fileSize": "27KB",
+        "lastModified": "2018/5/12",
+        "isSelected": false
+      }]
+ }
