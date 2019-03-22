@@ -21,7 +21,9 @@
         </p>
       </div><!-- end div#container -->
     </form><!--end form#loginForm-->
-    <login-by-phone :a-p-login="message.APLogin" @loginByAP="message.APLogin=true"></login-by-phone>
+    <keep-alive>
+      <login-by-phone :a-p-login="message.APLogin" @loginByAP="message.APLogin=true"></login-by-phone>
+    </keep-alive>
   </div>
 </template>
 

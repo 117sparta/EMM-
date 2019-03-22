@@ -108,6 +108,7 @@ export default {
         this.notAvailableAccount = false
         this.accountPass = true
         this.accountTip = '用户名可用'
+        this.regBtnIsDisabled = false
       }
     },
     accountGetFocus: function () {

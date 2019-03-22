@@ -137,7 +137,8 @@ export default {
     chooseFile: function () {
       $('#fileList').click()
     },
-    selectAll: function () {
+    selectAll: function (event) {
+      event.stopPropagation()
       this.isSelectedAll = !this.isSelectedAll
       if (!this.isSelectedAll) {
         for (let i = 0; i < this.fileList.length; i++) {
@@ -207,6 +208,7 @@ export default {
       for (let i = 0; i < this.fileList.length; i++) {
         if (this.fileList[i].isSelected === true) {
           this.fileList.splice(i, 1)
+          this.totalSelectedNum -= 1
           i--
         }
       }

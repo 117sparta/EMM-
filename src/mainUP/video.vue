@@ -130,7 +130,8 @@ export default {
     chooseFile: function () {
       $('#fileList').click()
     },
-    selectAll: function () {
+    selectAll: function (event) {
+      event.stopPropagation()
       this.isSelectedAll = !this.isSelectedAll
       if (!this.isSelectedAll) {
         for (let i = 0; i < this.fileList.length; i++) {

@@ -236,13 +236,17 @@ export default {
     },
     deletePic: function () {
       for (let i = 0; i < this.dataList.length; i++) {
-        if (this.dataList[i].allIsSelectedInOneSet === true) {
+        let dataSet = this.dataList[i]
+        let length = dataSet.pictureUrls.length
+        if (dataSet.allIsSelectedInOneSet === true) {
           this.dataList.splice(i, 1)
+          this.totalSelectedPicNum -= length
           i--
         } else {
-          for (let j = 0; j < this.dataList[i].pictureUrls.length; j++) {
-            if (this.dataList[i].pictureUrls[j].isSelected === true) {
-              this.dataList[i].pictureUrls.splice(j, 1)
+          for (let j = 0; j < length; j++) {
+            if (dataSet.pictureUrls[j].isSelected === true) {
+              dataSet.pictureUrls.splice(j, 1)
+              this.totalSelectedPicNum -= 1
               j--
             }
           }
@@ -262,7 +266,7 @@ export default {
 #pictureFrame{
   width:100%;
   height:96%;
-  //border:1px solid black;
+  /*border:1px solid black;*/
 }
   #picPageHeader{
     width:100%;

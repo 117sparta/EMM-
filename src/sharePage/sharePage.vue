@@ -128,7 +128,8 @@ export default {
         this.functionOn = false
       }
     },
-    selectAllShareLink: function () {
+    selectAllShareLink: function (event) {
+      event.stopPropagation()
       this.selectAll = !this.selectAll
       if (this.selectAll) {
         for (let i = 0; i < this.shareList.length; i++) {
