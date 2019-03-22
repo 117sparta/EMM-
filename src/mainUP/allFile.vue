@@ -79,7 +79,7 @@
 
 <script>
 /* eslint-disable */
-// import axios from 'axios'
+import axios from 'axios'
 import $ from 'jquery'
 import file from './file'
 import deleteWarning from './deleteWarning'
@@ -102,13 +102,23 @@ export default {
     }
   },
  created: function () {
+    axios.get("http://localhost:8080/static/message1.json",{}).then(response=>{
+      console.log(response.data);
+      //let json = JSON.parse(response);
+      //let jsonData = JSON.stringify(response)
+      this.fileList = response.data.fileList1
+      for (let i = 0; i < this.fileList.length; i++) {
+        console.log(this.fileList[i].isSelected)
+      }
+    })
+    /*
     this.$http.get('../../static/message1.json').then(response=>{
       let jsonData = JSON.stringify(response.body)
       this.fileList = JSON.parse(jsonData).fileList1
       for (let i = 0; i < this.fileList.length; i++) {
         console.log(this.fileList[i].isSelected)
       }
-    })
+    }) */
  },
   methods: {
     fileUpload: function (event) {
